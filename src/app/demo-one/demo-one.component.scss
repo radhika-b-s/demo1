@@ -1,19 +1,19 @@
+$text-primary-color: #192C49;
+$text-secondary-color: #D63C00;
 .demo-container {
-    .heading {
+    .page-heading {
         display: flex;
         flex-direction: row;
         align-items: center;
         padding: 10px;
 
         mat-icon {
-            color: #192C49;
+            color: $text-primary-color;
         }
 
         h1 {
             font: normal normal bold 28px Roboto;
-            color: #192C49;
-            font-size: 28px;
-            font-weight: bold;
+            color: $text-primary-color;
             margin: 0;
             margin-left: 20px;
         }
@@ -45,7 +45,7 @@ button {
 }
 
 .add-button {
-    color: #192C49;
+    color: $text-primary-color;
     letter-spacing: 0px;
     font: normal normal 500 15px Roboto;
     display: flex;
@@ -67,10 +67,6 @@ button {
     border-bottom: 0.1rem solid #E6E8F0;
 }
 
-.p-0 {
-    padding: 0;
-}
-
 .heading-box {
     display: flex;
     flex-direction: row;
@@ -80,7 +76,7 @@ button {
 
 .response-heading {
     font: normal normal 450 21px Roboto;
-    color: #192C49;
+    color: $text-primary-color;
     letter-spacing: 0px;
     padding-left: 10px;
 }
@@ -90,7 +86,7 @@ button {
     padding: 18px;
 
     h3 {
-        color: #D63C00;
+        color: $text-secondary-color;
         font: normal normal 500 14px/19px Roboto;
         margin: 0;
         margin-left: 5%;
@@ -99,7 +95,7 @@ button {
 
 .form-label {
     font: normal normal normal 16px Roboto;
-    color: #192C49;
+    color: $text-primary-color;
 }
 
 input.form-control {
@@ -119,19 +115,17 @@ input.form-control {
 
     .form-check-label {
         font: normal normal normal 19px Roboto;
-        color: #192C49;
+        color: $text-primary-color;
     }
 
     .form-check-input {
         transform: scale(1.8);
         margin-left: 30px;
         --bs-form-check-bg: #C3C6D1;
-        /* height: 22px;
-        width: 40px; */
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3.5' fill='white'/%3e%3c/svg%3e");
         &:checked {
-            background-color: #D63C00;
-            border-color: #D63C00;
+            background-color: $text-secondary-color;
+            border-color: $text-secondary-color;
         }
     }
 
@@ -139,23 +133,20 @@ input.form-control {
         margin-left: 40px;
         margin-bottom: 0;
         font: normal normal normal 19px Roboto;
-        color: #192C49;
+        color: $text-primary-color;
     }
 }
 
 .more_icon {
-    color: #192C49;
+    color: $text-primary-color;
 }
 
 mat-toolbar {
-    background-color: #192C49;
+    background-color: $text-primary-color;
     padding: 0;
     height: 84px;
 
     mat-icon {
-        /* height: 84px;
-        width: 84px;
-        font-size: 40px; */
         color: #A0AEC4;
         line-height: 0.6;
         font-weight: 100;
@@ -164,16 +155,16 @@ mat-toolbar {
 
 mat-sidenav {
     width: 84px;
-    background-color: #192C49;
+    background-color: $text-primary-color;
     border-right: transparent;
 }
 
 mat-sidenav-container {
-    height: 100%;
+    width: 100%;
 }
 
 mat-slide-toggle {
-    color: #192C49;
+    color: $text-primary-color;
 }
 
 .mat-mdc-tab-group {
@@ -182,11 +173,11 @@ mat-slide-toggle {
 
 ::ng-deep .mat-mdc-tab.mdc-tab--active {
     .mdc-tab__text-label {
-        color: #D63C00 !important;
+        color: $text-secondary-color !important;
     }
 
     .mdc-tab-indicator__content--underline {
-        border-color: #D63C00 !important;
+        border-color: $text-secondary-color !important;
     }
 }
 
@@ -213,13 +204,13 @@ mat-slide-toggle {
 
 ::ng-deep .mat-mdc-slide-toggle .mdc-label {
     font: normal normal normal 19px Roboto;
-    color: #192C49;
+    color: $text-primary-color;
 }
 
 ::ng-deep .mat-mdc-tab .mdc-tab__text-label {
     font: normal normal 500 14px Roboto;
     letter-spacing: 0px;
-    color: #192C49;
+    color: $text-primary-color;
 }
 
 ::ng-deep .mat-mdc-icon-button:hover .mat-mdc-button-persistent-ripple::before {

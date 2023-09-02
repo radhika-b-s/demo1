@@ -3,64 +3,23 @@
         aria-label="Example icon-button with menu icon">
         <mat-icon>drag_handle</mat-icon>
     </button>
-    <!-- <span>My App</span> -->
 </mat-toolbar>
 
 <mat-sidenav-container>
-    <mat-sidenav #sidenav fixedInViewport="true"
-    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" 
-    [mode]="(isHandset$ | async) ? 'over' : 'side'"
-    [opened]="!(isHandset$ | async)" 
-    >
-        <!-- <button mat-icon-button>
-            <mat-icon>dashboard</mat-icon>
-        </button>
-        <button mat-icon-button>
-            <mat-icon>inbox</mat-icon>
-        </button>
-        <button mat-icon-button>
-            <mat-icon>home_work</mat-icon>
-        </button>
-        <button mat-icon-button>
-            <mat-icon>house</mat-icon>
-        </button>
-        <button mat-icon-button>
-            <mat-icon>handyman</mat-icon>
-        </button>
-        <button mat-icon-button>
-            <mat-icon>work_history</mat-icon>
-        </button>
-        <button mat-icon-button>
-            <mat-icon>edit_calendar</mat-icon>
-        </button>
-        <button mat-icon-button>
-            <mat-icon>photo_library</mat-icon>
-        </button>
-        <button mat-icon-button>
-            <mat-icon>checklist_rtl</mat-icon>
-        </button>
-        <button mat-icon-button>
-            <mat-icon>sms</mat-icon>
-        </button>
-        <button mat-icon-button>
-            <mat-icon>manage_accounts</mat-icon>
-        </button> -->
+    <mat-sidenav #sidenav fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
     </mat-sidenav>
+    
     <mat-sidenav-content>
         <div class="container demo-container">
             <div class="row py-3">
-                <div class="col heading">
+                <div class="col page-heading">
                     <mat-icon>arrow_back_ios_new</mat-icon>
                     <h1>Email@fyxt.com - Settings</h1>
                 </div>
             </div>
             <div class="row demo-row-two bg-white">
                 <mat-tab-group fitInkBarToContent mat-stretch-tabs="false" mat-align-tabs="start" [selectedIndex]="2">
-                    <!-- <mat-tab>
-                        <ng-template mat-tab-label>
-                            <span matBadge="4" matBadgeOverlap="false">Inboxes</span>
-                        </ng-template>
-                    </mat-tab> -->
                     <mat-tab label="Inboxes (1)">
                         <div class="container"></div>
                     </mat-tab>
@@ -91,9 +50,6 @@
                                                 <mat-icon class="more_icon">more_vert</mat-icon>
                                             </button>
                                         </div>
-                                        <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-end">
-                                            
-                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -127,7 +83,6 @@
                                                     id="flexSwitchCheckDefault">
                                                 <h3>{{ isChecked ? 'On' : 'Off' }}</h3>
                                             </div>
-                                            <!-- <mat-slide-toggle color="primary" name="response_schedule" [(ngModel)]="isChecked">Set a Response Schedule <span class="schedule_status">{{ isChecked ? 'On' : 'Off' }}</span></mat-slide-toggle> -->
                                         </div>
                                     </form>
                                 </div>
